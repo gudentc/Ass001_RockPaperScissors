@@ -13,7 +13,7 @@ public class RockPaperScissors {
         do {
             System.out.print(Menu);
             do {
-                System.out.println("Player A - What is your move: ");
+                System.out.print("Player A - What is your move: ");
                 if(in.hasNext("[RPSrps]")) {
                     PlayerA = in.next();
                     in.nextLine(); // clears the line from buffer
@@ -35,7 +35,7 @@ public class RockPaperScissors {
                 } else {
                     // Not RSPrps
                     trash = in.nextLine();
-                    System.out.println("You enter: " + trash);
+                    System.out.println("You entered: " + trash);
                     System.out.println("You have to enter a valid move!");
                 }
             } while (!done);
@@ -62,7 +62,7 @@ public class RockPaperScissors {
                 }
             }
             System.out.print("\nDo you want to play again? [Y/N] ");
-            if (in.hasNext(" [Yy]")) {
+            if(in.hasNext(" [Yy]")) {
                 in.nextLine(); // clears the newline from the buffer
                 PlayAgain = true;
             } else {
