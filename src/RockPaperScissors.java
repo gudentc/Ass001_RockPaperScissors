@@ -14,7 +14,7 @@ public class RockPaperScissors {
             System.out.print(Menu);
             do {
                 System.out.println("Player A - What is your move: ");
-                if (in.hasNext(" [RPSrps]")) {
+                if(in.hasNext("[RPSrps]")) {
                     PlayerA = in.next();
                     in.nextLine(); // clears the line from buffer
                     done = true; // we have a valid number
@@ -28,14 +28,14 @@ public class RockPaperScissors {
             done = false;
             do {
                 System.out.print("Player B - Enter your move: ");
-                if (in.hasNext("[RPSrps] ")) {
+                if(in.hasNext("[RPSrps] ")) {
                     PlayerB = in.next();
                     in.nextLine(); //clears the newline from the buffer
                     done = true; // we got a valid move
                 } else {
                     // Not RSPrps
                     trash = in.nextLine();
-                    System.out.println("You entere: " + trash);
+                    System.out.println("You enter: " + trash);
                     System.out.println("You have to enter a valid move!");
                 }
             } while (!done);
