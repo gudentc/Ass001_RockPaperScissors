@@ -28,7 +28,7 @@ public class RockPaperScissors {
             done = false;
             do {
                 System.out.print("Player B - Enter your move: ");
-                if(in.hasNext("[RPSrps] ")) {
+                if(in.hasNext("[RPSrps]")) {
                     PlayerB = in.next();
                     in.nextLine(); //clears the newline from the buffer
                     done = true; // we got a valid move
