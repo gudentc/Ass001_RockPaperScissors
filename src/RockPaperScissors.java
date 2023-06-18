@@ -62,7 +62,7 @@ public class RockPaperScissors {
                 }
             }
             System.out.print("\nDo you want to play again? [Y/N] ");
-            if(in.hasNext(" [Yy]")) {
+            if(in.hasNext("[Yy]")) {
                 in.nextLine(); // clears the newline from the buffer
                 PlayAgain = true;
             } else {
